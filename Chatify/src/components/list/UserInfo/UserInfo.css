@@ -1,0 +1,24 @@
+.icons{
+    display: flex;
+    width: 20px;
+    cursor: pointer;
+}
+
+.userinfo{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.userimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
