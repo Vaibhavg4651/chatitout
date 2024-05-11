@@ -10,12 +10,19 @@ import mic from '../../assets/microphone-lines-solid.svg'
 
 import EmojiPicker from 'emoji-picker-react'
 import { useState } from 'react'
+import { useEffect } from 'react'
+import { useRef } from 'react'
+
 
 function Chat() {
 
   const [open, setOpen] = useState(false)
   const [text, setText] = useState('')
+  const endref = useRef(null)
 
+  useEffect(() => {
+    endref.current.scrollIntoView({behavior:'smooth'})
+  }, [])
 
   const handleEmoji = e => {
     setText(prev=>prev+e)
@@ -115,6 +122,8 @@ function Chat() {
             <span>1 min ago</span>
           </div>
         </div>
+
+        <div ref={endref}></div>
 
 
       </div>
