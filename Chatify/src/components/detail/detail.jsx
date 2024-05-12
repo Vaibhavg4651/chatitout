@@ -3,6 +3,7 @@ import './detail.css'
 import arrowdown from '../../assets/circle-down-regular.svg'
 import arrowup from '../../assets/circle-up-solid.svg'
 import download from '../../assets/cloud-arrow-down-solid.svg'
+import { auth } from '../../backend/firebase'
 
 function Detail() {
   return (
@@ -33,7 +34,9 @@ function Detail() {
 
          <br />
         <button>BLOCK USER</button>
+      <button onClick={()=>auth.signOut()}>LOGOUT</button>
       </div>
+
     </div>
   )
 }
