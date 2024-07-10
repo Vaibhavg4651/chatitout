@@ -15,13 +15,13 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDtnkq8a4PU9TZd1ZFjZN_es8DWaupUiAY",
-  authDomain: "chatify-1d5f9.firebaseapp.com",
-  projectId: "chatify-1d5f9",
-  storageBucket: "chatify-1d5f9.appspot.com",
-  messagingSenderId: "279335610048",
-  appId: "1:279335610048:web:e2608aaacbe6ca7a4faf25",
-  measurementId: "G-KZ6VPPPCM9"
+  apiKey: "AIzaSyBUkd5XXvPyvmjI7Xz3Kd0y8SwgPAi5R5s",
+  authDomain: "chatitout-db.firebaseapp.com",
+  projectId: "chatitout-db",
+  storageBucket: "chatitout-db.appspot.com",
+  messagingSenderId: "931639156737",
+  appId: "1:931639156737:web:e93a3dbbb4eb6f09312000",
+  measurementId: "G-XS7WP7MCRF"
 };
 
 

@@ -35,12 +35,12 @@ const handleRegister = async e => {
     const{username, email, password, file} = Object.fromEntries(formData)
     try {
         const res = await createUserWithEmailAndPassword(auth, email, password)
-        // const imgUrl= await Upload(avatar.file)
+        const imgUrl= await Upload(avatar.file)
         await setDoc(doc(db, 'users', res.user.uid), {
             username,
             email,
             id: res.user.uid,
-            // avatar: imgUrl,
+            avatar: imgUrl,
             blocked:[]
         })
         await setDoc(doc(db, 'userchats', res.user.uid), {

@@ -12,6 +12,7 @@ import { onSnapshot } from 'firebase/firestore'
 import { db } from '../../../backend/firebase'
 import avtrr from '../../../assets/user.png'
 import { getDoc } from 'firebase/firestore'
+import { useChatStore } from '../../../backend/chatStore'
 
 function ChatList() {
 
@@ -66,7 +67,7 @@ function ChatList() {
 
       {chats.map(chat => (
 
-      <div className="items" key={chat.chatId} onClick={()handleSelect(chat)}>
+      <div className="items" key={chat.chatId} >
             <img src={chat.user.avatar || avtrr} alt="avatar" className='userimg'/>
       <div className="texts">
         <span>{chat.user.username}</span>
